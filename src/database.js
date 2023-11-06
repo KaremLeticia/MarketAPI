@@ -3,7 +3,7 @@ require('dotenv').config();
 
 const string_conexao = process.env.CONNECTION_STRING
 const sequelize = new Sequelize(string_conexao, {
-  dialect: 'postgres',
+  dialect: require('pg'),
   logging: false,
 });
 
